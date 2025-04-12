@@ -47,14 +47,30 @@ import Sexylogo from '../lib/assets/sexylogo.png'
 
 //services section data
 
-  const servicesgrid = [
+const servicesgrid = [
   [
-    { title: 'Code', description: 'Develop like a pro', icon: '<i class="fa-regular fa-lightbulb"></i>' },
-    { title: 'Launch', description: 'Lift off to production', icon: '<i class="fa-regular fa-rocket"></i>' }
+    {
+      title: 'Code',
+      description: 'Develop like a pro',
+      icon: '<i class="fa-solid fa-code"></i>',
+    },
+    {
+      title: 'Launch',
+      description: 'Lift off to production',
+      icon: '<i class="fa-solid fa-rocket"></i>',
+    }
   ],
   [
-    { title: 'Celebrate', description: 'Grab a beer!', icon: '<i class="fa-regular fa-champagne-glasses"></i>' },
-    { title: 'Repeat', description: 'Do it all again', icon: '<i class="fa-regular fa-repeat"></i>' }
+    {
+      title: 'Celebrate',
+      description: 'Grab a beer!',
+      icon: '<i class="fa-solid fa-champagne-glasses"></i>',
+    },
+    {
+      title: 'Repeat',
+      description: 'Do it all again',
+      icon: '<i class="fa-solid fa-rotate-right"></i>', // fa-rotate-right is the correct repeat icon
+    }
   ]
 ];
 
