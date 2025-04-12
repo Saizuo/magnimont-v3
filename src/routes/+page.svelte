@@ -9,7 +9,7 @@ import Sexylogo from '../lib/assets/sexylogo.png'
     [
       { title: "Box 1", description: "Description 1" },
       { title: "Box 2", description: "Description 2" }, 
-      { title: "Box 2", description: "Description 2" }.
+      { title: "Box 2", description: "Description 2" }
     
     ]
   ];
