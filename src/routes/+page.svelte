@@ -167,15 +167,6 @@ import Sexylogo from '../lib/assets/sexylogo.png'
   ]}
 />
 
-<!-- I am NOT DOING CONTACT PAGE FUCK FORM HANDLING THAT IS SO ASS 
-              jokes aside pls do the form section here
-              or if you cant then ill do it anyways but i would like to avoid it if possible
-              specially since i dont know much backend 
--->
-
-<!-- nevermind -->
-
-<!-- contact page -->
 
 <Headers
 maxwidth='100vw'
