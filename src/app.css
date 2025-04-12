@@ -30,6 +30,9 @@ overflow-x: hidden;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
+    max-width: 1200px;
+
 
 }
 

@@ -64,20 +64,23 @@ import Sexylogo from '../lib/assets/sexylogo.png'
  <div class='w-screen min-h-screen'>
 
      <Spotlight/>
-     <div class="flex-usual-column herowrapper">
-      <div class='herologo'>
-        <img src={Sexylogo}>
-      </div>  
-      <div class='flex flex-col items-center'>
+     <div class='flex justify-center flex-row items-center '>
 
-        <Herotext 
-        title="Software for Ventures" 
-        description="At Magnimont, we blend innovation with expertise to create tailored tech solutions that drive your business forward. From digital transformation to scalable growth, we're your partner in progress." 
-        align='left'
-        />
-        <Button height="50px"/>
-      </div> 
+       <div class="flex-usual-column herowrapper">
+         <div class='herologo'>
+           <img src={Sexylogo}>
+          </div>  
+          <div class='flex flex-col items-center'>
+            
+            <Herotext 
+            title="Software for Ventures" 
+            description="At Magnimont, we blend innovation with expertise to create tailored tech solutions that drive your business forward. From digital transformation to scalable growth, we're your partner in progress." 
+            align='left'
+            />
+            <Button height="50px"/>
+          </div> 
         </div>
+      </div>
         
     </div>
 
