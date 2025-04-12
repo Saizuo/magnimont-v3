@@ -1,83 +1,50 @@
-
- <script>
-import {Testimonials,Spotlight, Herotext,Button,Servicesgrid,Aboutgrid,Headers,Faq,Contact} from '$lib/index';
-import Sexylogo from '../lib/assets/sexylogo.png'
-
-//ABout section data
-
-    const aboutsection = [
-    [
-      { title: "Box 1", description: "Description 1" },
-      { title: "Box 2", description: "Description 2" }, 
-      { title: "Box 2", description: "Description 2" }
-    
-    ]
-  ];
-
-//PUT THE IMAGES AND EDIT ACCORDINGLY
-//PUT THE IMAGES IN src/lib/assets/testimonials/[name].svg
-
-  const testimonials = [
-  {
-    quote:
-      "We wish to thank Vikas Nath and his team at Magnimont for delivering our platform ahead of schedule. We transitioned smoothly thanks to the level of precision and the clean code. Could not recommend them more & I would 100% work with them again!",
-    name: "Chelsey Childers",
-    image: "/reviews/ChelseyChilders.webp", // You'll need to add actual image paths
-  },
-  {
-    quote:
-      "Choosing to partner with Magnimont for implementation of AI was indeed our smartest decision. They have a professional, responsive and technically brilliant team. They took it from our idea to reality without exceeding our budget.",
-    name: "Kish Kuruppath",
-    image: "/reviews/KishKuruppath.webp",
-  },
-  {
-    quote:
-      "Superb job of making web Divisions! Magnimont brought new life to our old site by creating a sharp design, fast-loading site that appeals to our customers. It is simply a testament to their experience in UI/UX.",
-    name: "Varun Dosapati",
-    image: "/reviews/VarunDosapati.webp",
-  },
-  {
-    quote:
-      "İ have no idea about this website but it's good to see what they discovered for the future and helping the nation with great skills good to be part of the team",
-    name: "Bilal Bhat",
-    image: "/reviews/BilalBhat.webp",
-  },
-];
+<!--  
+  
+  
+ ______________________
+< message for the devs >
+ ----------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     || 
+                
+                
+                -> The data for the landing page can be edited by scrolling down.
+                -> make sure to follow the importing system in lib/index.js to import components in routes
+                -> try not to use tailwind but in case you really arent comfortable with plain css you can use tailwind too
+                -> Goos luck :>
+                                  -krinzal
+                
+                -->
 
 
-//services section data
 
-  const servicesgrid = [
-  [
-    { title: 'Code', description: 'Develop like a pro', icon: '<i class="fa-regular fa-lightbulb"></i>' },
-    { title: 'Launch', description: 'Lift off to production', icon: '<i class="fa-regular fa-rocket"></i>' }
-  ],
-  [
-    { title: 'Celebrate', description: 'Grab a beer!', icon: '<i class="fa-regular fa-champagne-glasses"></i>' },
-    { title: 'Repeat', description: 'Do it all again', icon: '<i class="fa-regular fa-repeat"></i>' }
-  ]
-];
 
-</script>
+
 
 <!-- Hero section -->
  <div class='w-screen min-h-screen'>
 
      <Spotlight/>
-     <div class="flex-usual-column herowrapper">
-      <div class='herologo'>
-        <img src={Sexylogo}>
-      </div>  
-      <div class='flex flex-col items-center'>
+     <div class='flex justify-center flex-row items-center '>
 
-        <Herotext 
-        title="Software for Ventures" 
-        description="At Magnimont, we blend innovation with expertise to create tailored tech solutions that drive your business forward. From digital transformation to scalable growth, we're your partner in progress." 
-        align='left'
-        />
-        <Button height="50px"/>
-      </div> 
+       <div class="flex-usual-column herowrapper">
+         <div class='herologo'>
+           <img src={Sexylogo}>
+          </div>  
+          <div class='flex flex-col items-center'>
+            
+            <Herotext 
+            title="Software for Ventures" 
+            description="At Magnimont, we blend innovation with expertise to create tailored tech solutions that drive your business forward. From digital transformation to scalable growth, we're your partner in progress." 
+            align='left'
+            />
+            <Button height="50px"/>
+          </div> 
         </div>
+      </div>
         
     </div>
 
@@ -164,15 +131,6 @@ import Sexylogo from '../lib/assets/sexylogo.png'
   ]}
 />
 
-<!-- I am NOT DOING CONTACT PAGE FUCK FORM HANDLING THAT IS SO ASS 
-              jokes aside pls do the form section here
-              or if you cant then ill do it anyways but i would like to avoid it if possible
-              specially since i dont know much backend 
--->
-
-<!-- nevermind -->
-
-<!-- contact page -->
 
 <Headers
 maxwidth='100vw'
@@ -187,3 +145,82 @@ align='center'
   title="Let's Talk" 
   description="Have a project or idea? Send us a message and we’ll get back to you soon." 
 />
+
+
+
+<script>
+  import {Testimonials,Spotlight, Herotext,Button,Servicesgrid,Aboutgrid,Headers,Faq,Contact} from '$lib/index';
+  import Sexylogo from '../lib/assets/sexylogo.png'
+  
+  //ABout section data
+  
+      const aboutsection = [
+      [
+        { title: "Box 1", description: "Description 1" },
+        { title: "Box 2", description: "Description 2" }, 
+        { title: "Box 2", description: "Description 2" }
+      
+      ]
+    ];
+  
+  //PUT THE IMAGES AND EDIT ACCORDINGLY
+  //PUT THE IMAGES IN src/lib/assets/testimonials/[name].svg
+  
+    const testimonials = [
+    {
+      quote:
+        "We wish to thank Vikas Nath and his team at Magnimont for delivering our platform ahead of schedule. We transitioned smoothly thanks to the level of precision and the clean code. Could not recommend them more & I would 100% work with them again!",
+      name: "Chelsey Childers",
+      image: "/reviews/ChelseyChilders.webp", // You'll need to add actual image paths
+    },
+    {
+      quote:
+        "Choosing to partner with Magnimont for implementation of AI was indeed our smartest decision. They have a professional, responsive and technically brilliant team. They took it from our idea to reality without exceeding our budget.",
+      name: "Kish Kuruppath",
+      image: "/reviews/KishKuruppath.webp",
+    },
+    {
+      quote:
+        "Superb job of making web Divisions! Magnimont brought new life to our old site by creating a sharp design, fast-loading site that appeals to our customers. It is simply a testament to their experience in UI/UX.",
+      name: "Varun Dosapati",
+      image: "/reviews/VarunDosapati.webp",
+    },
+    {
+      quote:
+        "İ have no idea about this website but it's good to see what they discovered for the future and helping the nation with great skills good to be part of the team",
+      name: "Bilal Bhat",
+      image: "/reviews/BilalBhat.webp",
+    },
+  ];
+  
+  
+  //services section data
+  
+  const servicesgrid = [
+    [
+      {
+        title: 'Code',
+        description: 'Develop like a pro',
+        icon: '<i class="fa-solid fa-code"></i>',
+      },
+      {
+        title: 'Launch',
+        description: 'Lift off to production',
+        icon: '<i class="fa-solid fa-rocket"></i>',
+      }
+    ],
+    [
+      {
+        title: 'Celebrate',
+        description: 'Grab a beer!',
+        icon: '<i class="fa-solid fa-champagne-glasses"></i>',
+      },
+      {
+        title: 'Repeat',
+        description: 'Do it all again',
+        icon: '<i class="fa-solid fa-rotate-right"></i>', // fa-rotate-right is the correct repeat icon
+      }
+    ]
+  ];
+  
+  </script>
