@@ -9,7 +9,7 @@ import Sexylogo from '../lib/assets/sexylogo.png'
     [
       { title: "Box 1", description: "Description 1" },
       { title: "Box 2", description: "Description 2" }, 
-      { title: "Box 2", description: "Description 2" }
+      { title: "Box 2", description: "Description 2" }.
     
     ]
   ];
@@ -71,7 +71,7 @@ import Sexylogo from '../lib/assets/sexylogo.png'
       <div class='flex flex-col items-center'>
 
         <Herotext 
-        title="Magnimont" 
+        title="Software for Ventures" 
         description="At Magnimont, we blend innovation with expertise to create tailored tech solutions that drive your business forward. From digital transformation to scalable growth, we're your partner in progress." 
         align='left'
         />
