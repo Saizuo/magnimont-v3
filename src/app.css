@@ -1,0 +1,70 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@font-face {
+    font-family: abc;
+    src: url(./lib/assets/abc.woff2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: abc;
+    font-weight: 300;
+}
+
+
+
+body{
+overflow-x: hidden;
+    background-color: var(--black);
+}
+
+
+/* HERO SECTION */
+.herowrapper{
+    padding-left: 2rem;
+    padding-right: 6rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+@media screen and (max-width: 768px) {
+    .herowrapper {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+  
+
+.herologo{
+    margin-top: -50px;
+    height: 250px;
+    width: 350px;
+}
+
+@media screen and (max-width:1024px) {
+    .herologo{
+        margin-top: 50px;
+        height: 200px;
+        width: 220px;
+    }
+}
+
+
+:root{
+    --black:#000000;
+    --accent:#05050A;
+    --white:#FFFFFF;
+    --gray:#A2A5AE;
+    --gradgray:#909090;
+    --grayfaded:#a2a5ae3b;
+    --faded:#a2a5ae16;
+}
